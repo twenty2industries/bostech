@@ -1,0 +1,28 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgb(0, 0, 0)),
+    url('/assets/img/background1.jpg') center/cover no-repeat;
+
+  .headlineArea {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-family: 'Poppins';
+    }
+
+    h3 {
+      font-family: 'Poppins';
+
+    }
+  }
+
+}
