@@ -1,0 +1,22 @@
+header {
+  font-size: 10px;
+  background-color: #0D1B2A;
+  padding: 2rem 2rem;
+  height: auto;
+
+  nav {
+    margin: 0em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4em;
+
+    a {
+      transition: ease-in-out 250ms;
+      color: white;
+      &:hover{
+        color: grey;
+      }
+    }
+  }
+}
