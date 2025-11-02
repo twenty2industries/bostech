@@ -3,16 +3,19 @@
         <h3>Ein Blick auf Arbeiten, die Performance, Struktur und Design vereinen.</h3>
     </div>
     <div class="hyphen"></div>
-    <div class="projectWrapper">
-        <div class="projectBox">
-            <div class="projectImageContainer">
-                <img class="projectPicture" src="assets/img/sections/projects/join.png" alt="">
-            </div>
-            <div class="projectInfo">
-                <h3>Projekt Titel</h3>
-                <p>Kurze Beschreibung des Projekts.</p>
-                <div><span>TAGS</span></div>
+    @for (item of project; track $index) {
+        <div class="projectWrapper">
+            <div class="projectBox">
+                <div class="projectImageContainer">
+                    <img class="projectPicture" src="assets/img/sections/projects/join.png" alt="">
+                </div>
+                <div class="projectInfo">
+
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.description}}</p>
+                    <div><span>{{item.techstack}}</span></div>
+                </div>
             </div>
         </div>
-    </div>
+    }
 </section>
