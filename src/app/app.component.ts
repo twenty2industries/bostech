@@ -3,12 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { ServicesSectionComponent } from './components/services-section/services-section.component';
+
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroSectionComponent, ProjectsSectionComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroSectionComponent, ProjectsSectionComponent, ServicesSectionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
