@@ -1,1 +1,16 @@
-<h1>SERVICES</h1>
+<section>
+  <h3>Effiziente Lösungen – von der Idee bis zum Ergebnis.</h3>
+      <div class="hyphen"></div>
+  <h1>Services</h1>
+  @for (item of services; track $index) {
+  <div class="servicesContainer">
+    <h3>{{item.title}}</h3>
+    <h4>{{item.price}} €</h4>
+    <p>{{item.description}}</p>
+    <div class="buttonContainer">
+      <button>Mehr erfahren</button>
+    </div>
+  </div>
+  }
+
+</section>

@@ -81,7 +81,6 @@ nav {
 
   &.active {
     background: transparent;
-
     &::before { transform: translateY(8px) rotate(45deg); }
     &::after { transform: translateY(-8px) rotate(-45deg); }
   }

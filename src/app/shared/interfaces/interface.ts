@@ -6,3 +6,11 @@ export interface Project {
   techstack: string[];
   duration: string;
 }
+
+export interface Service {
+  title: string;
+  price: number;
+  description: string;
+  target: string;
+  duration: string;
+}

@@ -5,18 +5,12 @@ section {
     align-items: center;
     flex-direction: column;
     margin: 1em;
+    margin-bottom: 4em;
 
     h3 {
         font-family: 'Poppins';
     }
 
-    .hyphen {
-        margin-top: 1em;
-        background-color: #1968b7;
-        height: 2px;
-        width: 90%;
-        border-radius: 20px;
-    }
 
     .projectWrapper {
         display: flex;
