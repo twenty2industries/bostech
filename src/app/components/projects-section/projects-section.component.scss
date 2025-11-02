@@ -5,11 +5,12 @@ section {
     align-items: center;
     flex-direction: column;
     margin: 1em;
-    h3{
+
+    h3 {
         font-family: 'Poppins';
     }
 
-    .hyphen{
+    .hyphen {
         margin-top: 1em;
         background-color: #1968b7;
         height: 2px;
@@ -27,9 +28,12 @@ section {
         width: 100%;
 
         .projectBox {
+            padding: 1em;
+            background: linear-gradient(to bottom, #000000 0%, #1968b754 100%);
+            border-radius: 20px;
             width: 100%;
             flex-direction: column;
-            border: solid red 2px;
+            _border: solid red 2px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -44,13 +48,19 @@ section {
                 height: 200px;
                 border-radius: 10px;
                 overflow: hidden;
-                .projectPicture{
+
+                .projectPicture {
                     width: 100%;
                 }
             }
         }
     }
-    .projectInfo{
+
+    .projectInfo {
         width: 100%;
+        display: flex;
+        gap: 2em;
+        flex-direction: column;
+
     }
 }
