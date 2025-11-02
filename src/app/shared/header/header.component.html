@@ -1,7 +1,9 @@
 <header>
-  <nav>
-    <span>LOGO<br>PLACEMENT</span>
-    <a href="">Home</a>
+  <span>LOGO<br>PLACEMENT</span>
+
+  <div class="burgerMenu" (click)="toggleMenu()">___</div>
+
+  <nav [class.d_none]="!menuOpen" [class.menuActive]="menuOpen"> <a href="">Home</a>
     <a href="">Über uns</a>
     <a href="">Leistungen</a>
     <a href="">FAQ</a>
