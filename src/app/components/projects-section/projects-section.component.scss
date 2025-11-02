@@ -1,9 +1,21 @@
 section {
+    font-family: 'Poppins';
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 1em;
+    h3{
+        font-family: 'Poppins';
+    }
+
+    .hyphen{
+        margin-top: 1em;
+        background-color: #1968b7;
+        height: 2px;
+        width: 90%;
+        border-radius: 20px;
+    }
 
     .projectWrapper {
         display: flex;
@@ -22,12 +34,23 @@ section {
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
-            .projectImage{
+
+            .projectImageContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin: 1em;
                 width: 90%;
                 height: 200px;
-                object-fit: cover;
-                border: solid rgb(8, 0, 255) 2px;}
+                border-radius: 10px;
+                overflow: hidden;
+                .projectPicture{
+                    width: 100%;
+                }
+            }
         }
+    }
+    .projectInfo{
+        width: 100%;
     }
 }
