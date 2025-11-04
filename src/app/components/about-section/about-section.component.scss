@@ -1,4 +1,4 @@
-section{
+section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,10 +7,11 @@ section{
   margin: 1em;
   gap: 1em;
 
-  h3{
+  h3 {
     width: 100%;
   }
-  .aboutWrapper{
+
+  .aboutWrapper {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -18,5 +19,22 @@ section{
     height: 80vh;
     background-color: rgba(149, 187, 249, 0.403);
     border-radius: 20px;
+
+
+    .smallContainerWrapper {
+flex-direction: column;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex: 1;
+
+      .smallContainer {
+        height: 30%;
+        width: 100%;
+        background-color: black;
+      }
+    }
+
   }
 }
