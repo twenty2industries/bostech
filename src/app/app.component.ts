@@ -5,13 +5,15 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { ServicesSectionComponent } from './components/services-section/services-section.component';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AboutSectionComponent, HeaderComponent, HeroSectionComponent, ProjectsSectionComponent, ServicesSectionComponent],
+  imports: [RouterOutlet, FaqSectionComponent, FooterComponent, AboutSectionComponent, HeaderComponent, HeroSectionComponent, ProjectsSectionComponent, ServicesSectionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
