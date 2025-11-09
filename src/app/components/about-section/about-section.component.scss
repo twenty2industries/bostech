@@ -22,7 +22,7 @@ section {
 
 
     .smallContainerWrapper {
-flex-direction: column;
+      flex-direction: column;
       height: auto;
       display: flex;
       align-items: center;
@@ -30,11 +30,18 @@ flex-direction: column;
       flex: 1;
 
       .smallContainer {
-        height: 30%;
-        width: 100%;
-        background-color: black;
+        padding: 0.8em;
+        background-color: rgba(149, 187, 249, 0.403);
+        border-radius: 2px;
+
+        span {
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 12px;
+        }
       }
     }
-
   }
 }
