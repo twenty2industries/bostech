@@ -17,8 +17,7 @@ section {
     gap: 1em;
     padding: 1em;
     height: 80vh;
-    background-color: rgba(149, 187, 249, 0.403);
-    border-radius: 20px;
+    background: linear-gradient(to left, #000000 0%, rgba(25, 104, 183, 0.3294117647) 50%);    border-radius: 20px;
 
 
     .smallContainerWrapper {
@@ -28,11 +27,11 @@ section {
       align-items: center;
       justify-content: space-evenly;
       flex: 1;
-
       .smallContainer {
+        height: 20%;
         padding: 0.8em;
-        background-color: rgba(149, 187, 249, 0.403);
-        border-radius: 2px;
+        background: linear-gradient(to left, #000000 0%, rgba(25, 104, 183, 0) 50%);
+        border-radius: 10px;
 
         span {
           font-weight: 600;
