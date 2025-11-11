@@ -12,12 +12,10 @@ section {
   }
 
   .aboutWrapper {
-    padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
     height: 80vh;
-    background: rgba(25, 104, 183, 0.3294117647);
     border-radius: 20px;
 
 
@@ -26,7 +24,7 @@ section {
       height: auto;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex: 1;
 
       .smallContainer {
