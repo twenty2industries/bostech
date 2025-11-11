@@ -3,7 +3,7 @@ export interface Project {
   description: string;
   imageUrl: string;
   projectUrl: string;
-  techstack: string[];
+  techstack: {icon: string; name: string}[] ,
   duration: string;
 }
 

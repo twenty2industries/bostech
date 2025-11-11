@@ -4,17 +4,21 @@
     </div>
     <div class="hyphen"></div>
     @for (item of project; track $index) {
-        <div class="projectWrapper">
-            <div class="projectBox">
-                <div class="projectImageContainer">
-                    <img class="projectPicture" src="assets/img/sections/projects/{{item.title}}.png" alt="">
-                </div>
-                <div class="projectInfo">
-                    <h3>{{item.title}}</h3>
-                    <p>{{item.description}}</p>
-                    <div><span>{{item.techstack}}</span></div>
+    <div class="projectWrapper">
+        <div class="projectBox">
+            <div class="projectImageContainer">
+                <img class="projectPicture" src="assets/img/sections/projects/{{item.title}}.png" alt="">
+            </div>
+            <div class="projectInfo">
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+                <div class="techIconsContainer">
+                    @for (techstackDetail of item.techstack; track $index) {
+                    <img class="techIcons" [src]="techstackDetail.icon">
+                    }
                 </div>
             </div>
         </div>
+    </div>
     }
 </section>

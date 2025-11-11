@@ -23,7 +23,7 @@ section {
 
         .projectBox {
             padding: 1em;
-            background: linear-gradient(to bottom, #000000 0%, #1968b754 100%);
+            background: linear-gradient(to bottom, #1b1b1b 40%, #1968b754 100%);
             border-radius: 20px;
             width: 100%;
             flex-direction: column;
@@ -55,6 +55,14 @@ section {
         display: flex;
         gap: 2em;
         flex-direction: column;
+    }
+}
 
+.techIconsContainer{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    .techIcons{
+        height: 40px;
     }
 }

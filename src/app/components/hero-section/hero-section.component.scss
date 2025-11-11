@@ -7,8 +7,9 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgb(0, 0, 0)),
-    url('/assets/img/background1.jpg') center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%),
+    url('/assets/img/background1.png') center/cover no-repeat;
+
 
   .headlineArea {
     margin-bottom: 1rem;
@@ -25,8 +26,7 @@ section {
     }
 
     h3 {
-            color: #ffffff6a;
-
+      color: #ffffffbb;
       font-family: 'Poppins';
     }
   }
@@ -50,5 +50,4 @@ section {
       border-radius: 20px;
     }
   }
-
 }
