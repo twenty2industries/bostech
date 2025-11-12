@@ -1,11 +1,10 @@
 section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 2em;
   flex-direction: column;
   padding: 1em;
   gap: 1em;
+
 
   h3 {
     width: 100%;
@@ -15,8 +14,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    height: 80vh;
-    border-radius: 20px;
+    border-radius: 10px;
 
 
     .smallContainerWrapper {
@@ -24,6 +22,7 @@ section {
       height: auto;
       display: flex;
       align-items: center;
+      gap: 1em;
       justify-content: space-between;
       flex: 1;
 
@@ -31,7 +30,7 @@ section {
         display: flex;
         flex-direction: column;
         gap: 1em;
-        height: 20%;
+        height: 23%;
         padding: 0.8em;
         background: #1968b7c9;
         border-radius: 10px;

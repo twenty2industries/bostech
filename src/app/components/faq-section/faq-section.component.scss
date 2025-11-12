@@ -12,15 +12,14 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    height: 80vh;
     width: 100%;
     border-radius: 20px;
 
     .faqContainer {
       background: rgba(25, 104, 183, 0.7882352941);
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 1em;
-      height: 18%;
+      height: 10%;
     }
   }
 }
