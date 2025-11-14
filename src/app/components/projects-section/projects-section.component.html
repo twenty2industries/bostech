@@ -12,10 +12,15 @@
             <div class="projectInfo">
                 <h3>{{item.title}}</h3>
                 <p>{{item.description}}</p>
+                <span>{{item.description}}</span>
                 <div class="techIconsContainer">
                     @for (techstackDetail of item.techstack; track $index) {
                     <img class="techIcons" [src]="techstackDetail.icon">
                     }
+                </div>
+                <div class="ctaContainer">
+                    <button class="ctaButtons">Projekt ansehen</button>
+                    <a href="" class="ctaButtonsDemo">Live-Demo</a>
                 </div>
             </div>
         </div>

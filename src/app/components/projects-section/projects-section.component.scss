@@ -6,11 +6,12 @@ section {
     flex-direction: column;
     margin: 1em;
     margin-bottom: 4em;
+    font-size: 10px;
 
     h3 {
         font-family: 'Poppins';
+        font-size: 1.8em;
     }
-
 
     .projectWrapper {
         display: flex;
@@ -20,6 +21,20 @@ section {
         gap: 2rem;
         margin-top: 2rem;
         width: 100%;
+
+        h3 {
+            font-family: 'Poppins';
+            font-size: 2.3em;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
+        span {
+            font-size: 1, 5em;
+            color: #d3d3d3;
+        }
 
         .projectBox {
             padding: 1em;
@@ -55,14 +70,52 @@ section {
         display: flex;
         gap: 2em;
         flex-direction: column;
+
+        .ctaContainer {
+            display: flex;
+            width: 100%;
+            gap: 1em;
+            justify-content: center;
+
+            .ctaButtons {
+                border-radius: none;
+                height: 2rem;
+                width: 45%;
+                border: none;
+                color: rgb(255, 255, 255);
+                font-family: 'Poppins';
+                font-size: 1rem;
+                background-color: #1968b7;
+                border-radius: 5px;
+            }
+
+            .ctaButtonsDemo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: none;
+                height: 2rem;
+                width: 45%;
+                border: none;
+                color: rgb(0, 0, 0);
+                font-family: 'Poppins';
+                font-size: 1rem;
+                background-color: #ffffffe9;
+                border-radius: 5px;
+
+            }
+        }
     }
 }
 
-.techIconsContainer{
+.techIconsContainer {
     display: flex;
     align-items: center;
     gap: 1em;
-    .techIcons{
-        height: 40px;
+
+    .techIcons {
+        height: 32px;
     }
+
+
 }

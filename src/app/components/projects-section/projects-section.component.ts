@@ -15,7 +15,7 @@ export class ProjectsSectionComponent {
       duration: 'Drei Wochen',
       imageUrl: 'assets/images/projects/Join.png',
       description:
-        'Ein Kanban-Manager mit Dashboard, Task-Manager und Kontaktverwaltung. Nutzer können Tasks mit Prioritäten erstellen, filtern und im Board verwalten. Das System bietet volle CRUD-Funktionen für Tasks und Kontakte.',
+        'Ein Kanban-Manager mit Dashboard, Task-Manager und Kontaktverwaltung.',
       techstack: [
         {
           icon: 'assets/img/sections/icons/angularDefault.png',
@@ -33,7 +33,7 @@ export class ProjectsSectionComponent {
       duration: 'Sieben Wochen',
       imageUrl: 'assets/images/projects/Overtake.png',
       description:
-        'Eine Angular-App zur Darstellung von Fahrer- und Konstrukteurswertungen mit Fullcards für detaillierte Fahrerinfos. Geplant sind Features wie Rennkalender, Sessions und Live-Daten.',
+        'Eine Angular-App zur Darstellung von Sessions und Live-Daten.',
       techstack: [
         {
           icon: 'assets/img/sections/icons/angularDefault.png',
