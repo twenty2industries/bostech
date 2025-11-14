@@ -25,8 +25,12 @@ export class ProjectsSectionComponent {
           icon: 'assets/img/sections/icons/apiDefault.png',
           name: 'restAPI',
         },
+        {
+          icon: 'assets/img/sections/icons/firebaseDefault.png',
+          name: 'FireBase',
+        },
       ],
-      projectUrl: '',
+      projectUrl: 'https://task-manager-bb.netlify.app/',
     },
     {
       title: 'Overtake',
@@ -43,8 +47,12 @@ export class ProjectsSectionComponent {
           icon: 'assets/img/sections/icons/apiDefault.png',
           name: 'restAPI',
         },
+        {
+          icon: 'assets/img/sections/icons/firebaseDefault.png',
+          name: 'FireBase',
+        },
       ],
-      projectUrl: '',
+      projectUrl: 'https://overtakef1.netlify.app/',
     },
   ];
   //#endregion properties
