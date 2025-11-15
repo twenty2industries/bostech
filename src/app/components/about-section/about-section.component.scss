@@ -35,7 +35,8 @@ section {
         gap: 0.5em;
         height: 23%;
         padding: 0.8em;
-        background: linear-gradient(to left, #1b1b1b 20%, rgba(25, 104, 183, 0.3294117647) 100%);
+        background: linear-gradient(to right, #1b1b1b 75%, rgba(25, 104, 183, 0.3294117647) 100%);
+        border-bottom: rgb(0, 0, 0) solid 3px;
         border-radius: 10px;
 
         span {

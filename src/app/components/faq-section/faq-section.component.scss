@@ -4,13 +4,14 @@ section {
   justify-content: center;
   margin-bottom: 2em;
   flex-direction: column;
-  padding: 1em;
+  padding: 1.5em;
   font-size: 10px;
 
   .headlineArea {
-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
+
     h3 {
       font-size: 1.8em;
     }
