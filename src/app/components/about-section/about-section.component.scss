@@ -9,12 +9,16 @@ section {
     width: 100%;
   }
 
+  .icons {
+    width: 35px;
+  }
+
+
   .aboutWrapper {
     display: flex;
     flex-direction: column;
     gap: 1em;
     border-radius: 10px;
-
 
     .smallContainerWrapper {
       flex-direction: column;
@@ -28,13 +32,16 @@ section {
       .smallContainer {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 0.5em;
         height: 23%;
         padding: 0.8em;
-        background: #1968b7c9;
+        background: linear-gradient(to left, #1b1b1b 20%, rgba(25, 104, 183, 0.3294117647) 100%);
         border-radius: 10px;
 
         span {
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
           font-weight: 600;
         }
 

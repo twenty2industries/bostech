@@ -5,8 +5,27 @@ section {
   margin-bottom: 2em;
   flex-direction: column;
   padding: 1em;
+  font-size: 10px;
 
-  .hyphen{
+  .headlineArea {
+width: 100%;
+    display: flex;
+    align-items: center;
+    h3 {
+      font-size: 1.8em;
+    }
+
+    .icons {
+      padding-right: 2em;
+      width: 35px;
+      height: 35px;
+    }
+
+  }
+
+
+
+  .hyphen {
     margin-bottom: 1em;
   }
 
@@ -19,10 +38,18 @@ section {
     border-radius: 20px;
 
     .faqContainer {
+      font-weight: 600;
+      font-size: 1.4em;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
       background: rgba(25, 104, 183, 0.7882352941);
       border-radius: 10px;
       padding: 1em;
       height: 10%;
+
+
+
     }
   }
 }
