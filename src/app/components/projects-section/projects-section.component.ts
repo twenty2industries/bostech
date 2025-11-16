@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { Project } from '../../shared/interfaces/interface';
+import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-projects-section',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './projects-section.component.html',
   styleUrl: './projects-section.component.scss',
 })
@@ -59,5 +63,8 @@ export class ProjectsSectionComponent {
       projectUrl: 'https://overtakef1.netlify.app/',
     },
   ];
+
+    constructor(private router: Router) {}
+
   //#endregion properties
 }

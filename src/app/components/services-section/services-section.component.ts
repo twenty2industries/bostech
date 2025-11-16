@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { Service } from '../../shared/interfaces/interface';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-services-section',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './services-section.component.html',
   styleUrl: './services-section.component.scss'
 })
