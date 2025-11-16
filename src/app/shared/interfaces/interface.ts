@@ -13,4 +13,5 @@ export interface Service {
   description: string;
   target: string;
   duration: string;
+  iconUrl: string;
 }
