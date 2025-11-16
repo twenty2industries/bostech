@@ -51,6 +51,10 @@ export class ProjectsSectionComponent {
           icon: 'assets/img/sections/icons/firebaseDefault.png',
           name: 'FireBase',
         },
+                {
+          icon: 'assets/img/sections/icons/tailwindDefault.png',
+          name: 'Tailwind',
+        },
       ],
       projectUrl: 'https://overtakef1.netlify.app/',
     },
