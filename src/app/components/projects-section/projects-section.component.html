@@ -3,7 +3,7 @@
         <h3>Ein Blick auf Arbeiten, die Performance, Struktur und Design vereinen.</h3>
     </div>
     <div class="hyphen"></div>
-    @for (item of project; track $index) {
+    @for (item of projectList; track $index) {
     <div class="projectWrapper">
         <div class="projectBox">
             <div class="projectImageContainer">
@@ -19,7 +19,7 @@
                     }
                 </div>
                 <div class="ctaContainer">
-                    <button [routerLink]="['fullcard']" class="ctaButtons">Projekt ansehen</button>
+                    <button [routerLink]="['fullcard', item.title]" class="ctaButtons">Projekt ansehen</button>
                     <a [href]="item.projectUrl" target="_blank" class="ctaButtonsDemo">Live-Demo</a>
                 </div>
             </div>

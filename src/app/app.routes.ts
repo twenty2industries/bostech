@@ -5,6 +5,6 @@ import { LandingpageSectionComponent } from './components/landingpage-section/la
 
 export const routes: Routes = [
   { path: '', component: LandingpageSectionComponent },
-  { path: 'fullcard', component: FullCardComponent }
+  { path: 'fullcard/:id', component: FullCardComponent }
 
 ];

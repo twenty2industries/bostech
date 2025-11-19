@@ -1,14 +1,37 @@
-section{
-
-}
-button{
-    color: black;
-
-}
-
-.adminArea{
+section {
+    position: relative;
     display: flex;
-    position: absolute;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+
+    background: radial-gradient(circle at top left,
+            #1968b754 20%,
+            #13151a 40%,
+            #0b0c0f 70%,
+            #050509 100%);
+    min-height: 100svh;
+    backdrop-filter: blur(8px);
+
+    .adminArea {
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fullcardInput {
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .imageArea{
+            img{
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+
+button {
+    color: black;
 }
