@@ -1,12 +1,12 @@
-section {
+body {
     position: relative;
     display: flex;
     flex-direction: column;
     background: radial-gradient(circle at top left,
-            #1968b754 20%,
-            #13151a 40%,
-            #0b0c0f 70%,
-            #050509 100%);
+            #1968b784 1%,
+            #1b1b1b 40%,
+            #1b1b1b 70%,
+            #1b1b1b 100%);
     min-height: 100svh;
     backdrop-filter: blur(8px);
 
