@@ -2,7 +2,6 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-
     background: radial-gradient(circle at top left,
             #1968b754 20%,
             #13151a 40%,
@@ -23,12 +22,34 @@ section {
         justify-content: space-between;
         flex-direction: column;
 
-        .imageArea{
-            img{
-                width: 100%;
-                height: 250px;
+        .projectTags {
+            display: flex;
+            gap: 1em;
+            text-align: center;
+
+            .tags {
+                background-color: #1968b7;
+                color: white;
+                padding: 0.3em 0.6em;
+                border-radius: 5px;
+                font-size: 0.9em;
             }
         }
+
+        .imageArea {
+            img {
+                width: 100%;
+                height: 250px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .hyphen {
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to left, #1968b7, #13151a00, #0b0c0f00);
+        margin: 1em 0;
     }
 }
 

@@ -1,5 +1,5 @@
 @if (project) {
-<section>
+<section @fadeInOut>
     <div class="adminArea">
         <h4>Adminansicht</h4>
         <button type="button" (click)="goBack()">zurück</button>
@@ -10,24 +10,19 @@
             <div class="hyphen"></div>
         </div>
         <div class="projectInputArea">
-            <span>Address</span>
-            <p>www.task-manager-bb.netlify.app</p>
+            <a target="_blank" [href]="project.projectUrl">{{project.projectUrl}}</a>
             <div class="hyphen"></div>
         </div>
 
         <div class="projectTags">
-            <h3>TagArea</h3>
             @for (item of project.techstack; track $index) {
-                <div class="div">{{item.name}}</div>
+            <div class="tags">{{item.name}}</div>
             }
-            <div class="hyphen"></div>
         </div>
+        <div class="hyphen"></div>
 
         <div class="imageArea">
-            <p>ImageArea</p>
-                <img [src]="'/' +project.imageUrl" alt="">
-
-                <div class="hyphen"></div>
+            <img [src]="project.imageUrl" alt="">
         </div>
 
         <div class="detailArea">

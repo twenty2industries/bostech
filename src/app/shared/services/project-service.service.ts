@@ -8,7 +8,7 @@ export class ProjectServiceService {
     {
       title: 'Join',
       duration: 'Drei Wochen',
-      imageUrl: 'assets/images/projects/Join.png',
+      imageUrl: 'assets/img/sections/projects/Join.png',
       description:
         'Ein Kanban-Manager mit Dashboard, Task-Manager und Kontaktverwaltung.',
       techstack: [
@@ -27,7 +27,7 @@ export class ProjectServiceService {
     {
       title: 'Overtake',
       duration: 'Sieben Wochen',
-      imageUrl: 'assets/images/projects/Overtake.png',
+      imageUrl: 'assets/img/sections/projects/Overtake.png',
       description:
         'Eine Angular-App zur Darstellung von Sessions und Live-Daten.',
       techstack: [
