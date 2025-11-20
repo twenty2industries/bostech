@@ -5,6 +5,7 @@ export interface Project {
   projectUrl: string;
   techstack: {icon: string; name: string}[] ,
   duration: string;
+  details?: string;
 }
 
 export interface Service {

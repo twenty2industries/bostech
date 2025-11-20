@@ -23,6 +23,7 @@ export class ProjectServiceService {
         },
       ],
       projectUrl: 'https://task-manager-bb.netlify.app/',
+      details: 'Klare Modulstruktur, aussagekräftige Benennungen und sorgfältige Dokumentation organisiert. So bleibt der Code übersichtlich und gut wartbar.',
     },
     {
       title: 'Overtake',
@@ -46,6 +47,8 @@ export class ProjectServiceService {
         },
       ],
       projectUrl: 'https://overtakef1.netlify.app/',
+      details: 'Fokus auf saubere Architektur mit Angular 19, RxJS und manuell gepflegtem SCSS. Ich vertiefe API-Integration, Firestore-Nutzung und responsives Design, um ein performantes Portfolio-Projekt umzusetzen.',
+
     },
   ];
   getProjects() {
