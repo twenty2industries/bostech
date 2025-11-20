@@ -4,10 +4,14 @@ import { Location } from '@angular/common';
 import { Project } from '../../shared/interfaces/interface';
 import { ProjectServiceService } from '../../shared/services/project-service.service';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
+
+
 
 @Component({
   selector: 'app-full-card',
-  imports: [RouterModule],
+  imports: [RouterModule, HeaderComponent, FooterComponent],
   templateUrl: './full-card.component.html',
   styleUrl: './full-card.component.scss',
   animations: [

@@ -1,4 +1,5 @@
 @if (project) {
+
 <body @fadeInOut>
     <div class="adminArea">
         <h4>Adminansicht</h4>
@@ -10,25 +11,23 @@
             <div class="hyphen"></div>
         </div>
         <div class="projectInputArea">
+            <p>Address</p>
             <a target="_blank" [href]="project.projectUrl">{{project.projectUrl}}</a>
             <div class="hyphen"></div>
         </div>
-
         <div class="projectTags">
             @for (item of project.techstack; track $index) {
             <div class="tags">{{item.name}}</div>
             }
         </div>
-        <div class="hyphen"></div>
-
         <div class="imageArea">
             <img [src]="project.imageUrl" alt="">
         </div>
-
         <div class="detailArea">
-            <p>Laufzeit etc.</p>
+            <p>Laufzeit</p>
         </div>
     </div>
-
 </body>
+<app-footer></app-footer>
+
 }
