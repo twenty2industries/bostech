@@ -1,56 +1,51 @@
 @if (service) {
 
-<body>
+<body @fadeInOut>
+    <div class="adminArea">
+        <h4>Adminansicht</h4> <button type="button" (click)="goBack()">zurück</button>
+    </div>
+    <div class="fullcardInput">
 
-    <div class="service-fullcard">
-        <div class="adminArea">
-            <h4>Adminansicht</h4>
-            <button type="button" (click)="goBack()">zurück</button>
-        </div>
+            <div class="projectTitleArea">
+        <h1>{{service.title}}</h1>
+        <h4>Serviceübersicht</h4>
+        <div class="hyphen"></div>
+    </div>
 
-        <div class="service-header">
-            <h1>{{service.title}}</h1>
-            <div class="price-tag">{{service.price}}€</div>
-        </div>
+    <div class="projectInputArea">
+        <p>Preis</p>
+        <span>{{service.price}}€</span>
+    </div>
+    
+    <div class="projectTags">
+        @for (item of service.technologies; track $index) {
+            <div class="tags">{{item}}</div>
+        }
+    </div>
 
-        <div class="service-meta">
-            <div class="meta-item">
-                <h3>Zielgruppe</h3>
+    <div class="detailArea">
+<!--         <div class="projectCategorie">
+            <div class="tags">{{service.category}}</div>
+        </div> -->
+        <span>{{service.description}}</span>
+        <div class="hyphen"></div>
+        <div class="projectInfo">
+            <div class="infoItem">
+                <span>Zielgruppe</span>
                 <p>{{service.target}}</p>
             </div>
-            <div class="meta-item">
-                <h3>Dauer</h3>
+            <div class="infoItem">
+                <span>Dauer</span>
                 <p>{{service.duration}}</p>
             </div>
-            <div class="meta-item">
-                <h3>Kategorie</h3>
-                <p>{{service.category}}</p>
+            <div class="infoItem">
+                <span>Support</span>
+                <p>{{service.supportInfo}}</p>
             </div>
-        </div>
-
-        <div class="description-section">
-            <h2>Beschreibung</h2>
-            <p>{{service.description}}</p>
-        </div>
-
-        <div class="features-section">
-            <h2>Features</h2>
-            <ul>
-                @for (feature of service.features; track $index) {
-                <li>{{feature}}</li>
-                }
-            </ul>
-        </div>
-
-        <div class="technologies-section">
-            <h2>Technologien</h2>
-            <div class="tech-tags">
-                @for (tech of service.technologies; track $index) {
-                <span class="tech-tag">{{tech}}</span>
-                }
+            <div class="infoItem">
+                <span>Features</span>
+                <p>{{service.features.join(', ')}}</p>
             </div>
         </div>
     </div>
-</body>
-
-}
+</div></body> <app-footer></app-footer> }

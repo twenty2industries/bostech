@@ -97,7 +97,7 @@ export class ProjectServiceService {
       id: 'firebase-mvp',
       title: 'Firebase MVP',
       price: 750,
-      description: 'Umfassendes Minimum Viable Product mit Authentifizierungssystem, Firestore-Datenbank und API-Integration – ideal für Startups zur Validierung ihrer Geschäftsidee.',
+      description: 'Umfassendes Minimum Viable Product mit Authentifizierungssystem, Firestore-Datenbank und API-Integration.',
       iconUrl: 'assets/img/sections/icons/mvpDefault.png',
       category: 'MVP Entwicklung',
       duration: '18–21 Werktage',
