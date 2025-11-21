@@ -1,0 +1,61 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top left,
+            #1968b784 1%,
+            #1b1b1b 40%,
+            #1b1b1b 70%,
+            #1b1b1b 100%);
+    min-height: 100svh;
+    backdrop-filter: blur(8px);
+
+    .adminArea {
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.service-fullcard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.price-tag {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.service-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: #f0f0f0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}

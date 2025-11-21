@@ -1,0 +1,51 @@
+@if (service) {
+<div class="service-fullcard">
+    <div class="adminArea">
+        <h4>Adminansicht</h4>
+        <button type="button" (click)="goBack()">zurück</button>
+    </div>
+    
+    <div class="service-header">
+        <h1>{{service.title}}</h1>
+        <div class="price-tag">{{service.price}}€</div>
+    </div>
+
+    <div class="service-meta">
+        <div class="meta-item">
+            <h3>Zielgruppe</h3>
+            <p>{{service.target}}</p>
+        </div>
+        <div class="meta-item">
+            <h3>Dauer</h3>
+            <p>{{service.duration}}</p>
+        </div>
+        <div class="meta-item">
+            <h3>Kategorie</h3>
+            <p>{{service.category}}</p>
+        </div>
+    </div>
+
+    <div class="description-section">
+        <h2>Beschreibung</h2>
+        <p>{{service.description}}</p>
+    </div>
+
+    <div class="features-section">
+        <h2>Features</h2>
+        <ul>
+            @for (feature of service.features; track $index) {
+            <li>{{feature}}</li>
+            }
+        </ul>
+    </div>
+
+    <div class="technologies-section">
+        <h2>Technologien</h2>
+        <div class="tech-tags">
+            @for (tech of service.technologies; track $index) {
+            <span class="tech-tag">{{tech}}</span>
+            }
+        </div>
+    </div>
+</div>
+}

@@ -14,10 +14,17 @@ export interface Project {
 }
 
 export interface Service {
+  id: string;
   title: string;
   price: number;
   description: string;
   target: string;
   duration: string;
   iconUrl: string;
+  category: string;
+  features: string[];
+  deliverables: string[];
+  processSteps: string[];
+  technologies: string[];
+  supportInfo: string;
 }

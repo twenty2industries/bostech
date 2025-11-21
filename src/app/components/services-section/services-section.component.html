@@ -2,7 +2,7 @@
   <h3>Effiziente Lösungen – von der Idee bis zum Ergebnis.</h3>
   <div class="hyphen"></div>
   <h1>Services</h1>
-  @for (item of services; track $index) {
+  @for (item of servicesList; track $index) {
     <div class="servicesContainer">
       <div class="titleArea">
         <h3>{{item.title}}</h3>
@@ -11,7 +11,7 @@
       <h4>{{item.price}} €</h4>
       <p>{{item.description}}</p>
       <div class="buttonContainer">
-        <button [routerLink]="['fullcard']" >Mehr erfahren</button>
+        <button [routerLink]="['services', item.id]" >Mehr erfahren</button>
       </div>
     </div>
   }
