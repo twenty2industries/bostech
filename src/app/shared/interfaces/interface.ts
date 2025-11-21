@@ -6,6 +6,11 @@ export interface Project {
   techstack: {icon: string; name: string}[] ,
   duration: string;
   details?: string;
+  category?: string;
+  budget?: string;
+  status?: string;
+  client?: string;
+  teamsize?: string;
 }
 
 export interface Service {

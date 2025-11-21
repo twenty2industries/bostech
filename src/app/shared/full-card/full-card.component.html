@@ -1,33 +1,56 @@
 @if (project) {
+    <body @fadeInOut>
+        <div class="adminArea">
+            <h4>Adminansicht</h4>
+            <button type="button" (click)="goBack()">zurück</button>
+        </div>
+        <div class="fullcardInput">
 
-<body @fadeInOut>
-    <div class="adminArea">
-        <h4>Adminansicht</h4>
-        <button type="button" (click)="goBack()">zurück</button>
-    </div>
-    <div class="fullcardInput">
-        <div class="projectTitleArea">
-            <h1>{{project.title}}</h1>
-            <div class="hyphen"></div>
-        </div>
-        <div class="projectInputArea">
-            <p>Address</p>
-            <a target="_blank" [href]="project.projectUrl">{{project.projectUrl}}</a>
-            <div class="hyphen"></div>
-        </div>
-        <div class="projectTags">
-            @for (item of project.techstack; track $index) {
-            <div class="tags">{{item.name}}</div>
-            }
-        </div>
-        <div class="imageArea">
-            <img [src]="project.imageUrl" alt="">
-        </div>
-        <div class="detailArea">
-            <span>{{project.details}}</span>
-        </div>
-    </div>
-</body>
-<app-footer></app-footer>
+            <div class="projectTitleArea">
+                <h1>{{project.title}}</h1>
+                <h4>Projektübersicht</h4>
+                <div class="hyphen"></div>
+            </div>
 
+            <div class="projectInputArea">
+                <p>Address</p>
+                <a target="_blank" [href]="project.projectUrl">{{project.projectUrl}}</a>
+            </div>
+            <div class="projectTags">
+                @for (item of project.techstack; track $index) {
+                    <div class="tags">{{item.name}}</div>
+                }
+            </div>
+            <div class="imageArea">
+                <img [src]="project.imageUrl" alt="">
+            </div>
+            <div class="detailArea">
+                <div class="projectCategorie">
+                    <div class="tags">{{project.category}}</div>
+                </div>
+                <span>{{project.details}}</span>
+                <div class="hyphen"></div>
+                <div class="projectInfo">
+                    <div class="infoItem">
+                        <h4>Kunde</h4>
+                        <p>{{project.client}}</p>
+                    </div>
+                    <div class="infoItem">
+                        <h4>Teamgröße</h4>
+                        <p>{{project.teamsize}}</p>
+                    </div>
+                    <div class="infoItem">
+                        <h4>Budget</h4>
+                        <p>{{project.budget}}</p>
+                    </div>
+                    <div class="infoItem">
+                        <h4>Status</h4>
+                        <p>{{project.status}}</p>
+                    </div>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+    <app-footer></app-footer>
 }

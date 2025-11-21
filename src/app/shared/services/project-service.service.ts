@@ -7,7 +7,6 @@ export class ProjectServiceService {
   private project: Project[] = [
     {
       title: 'Join',
-      duration: 'Drei Wochen',
       imageUrl: 'assets/img/sections/projects/Join.png',
       description:
         'Ein Kanban-Manager mit Dashboard, Task-Manager und Kontaktverwaltung.',
@@ -24,10 +23,16 @@ export class ProjectServiceService {
       ],
       projectUrl: 'https://task-manager-bb.netlify.app/',
       details: 'Klare Modulstruktur, aussagekräftige Benennungen und sorgfältige Dokumentation organisiert. So bleibt der Code übersichtlich und gut wartbar.',
+      category: 'Firebase MVP',
+      duration: '3 Wochen',
+      budget: 'Internes Projekt',
+      status: 'Abgeschlossen',
+      client: 'Eigenes Projekt',
+      teamsize: '2 Personen',
+
     },
     {
       title: 'Overtake',
-      duration: 'Sieben Wochen',
       imageUrl: 'assets/img/sections/projects/Overtake.png',
       description:
         'Eine Angular-App zur Darstellung von Sessions und Live-Daten.',
@@ -48,7 +53,12 @@ export class ProjectServiceService {
       ],
       projectUrl: 'https://overtakef1.netlify.app/',
       details: 'Fokus auf saubere Architektur mit Angular 19, RxJS und manuell gepflegtem SCSS. Ich vertiefe API-Integration, Firestore-Nutzung und responsives Design, um ein performantes Portfolio-Projekt umzusetzen.',
-
+      category: 'Firebase MVP',
+      duration: '6 Wochen',
+      budget: 'Internes Projekt',
+      status: 'Abgeschlossen',
+      client: 'Eigenes Projekt',
+      teamsize: 'Einzelprojekt',
     },
   ];
   getProjects() {
