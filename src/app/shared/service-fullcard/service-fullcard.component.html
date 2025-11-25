@@ -1,51 +1,52 @@
 @if (service) {
-
-<body @fadeInOut>
-    <div class="adminArea">
-        <h4>Adminansicht</h4> <button type="button" (click)="goBack()">zurück</button>
-    </div>
-    <div class="fullcardInput">
+    <body @fadeInOut>
+        <div class="adminArea">
+            <h4>Adminansicht</h4> <button type="button" (click)="goBack()">zurück</button>
+        </div>
+        <div class="fullcardInput">
 
             <div class="projectTitleArea">
-        <h1>{{service.title}}</h1>
-        <h4>Serviceübersicht</h4>
-        <div class="hyphen"></div>
-    </div>
+                <h1>{{service.title}}</h1>
+                <h4>Serviceübersicht</h4>
+                <div class="hyphen"></div>
+            </div>
 
-    <div class="projectInputArea">
-        <p>Preis</p>
-        <span>{{service.price}}€</span>
-    </div>
-    
-    <div class="projectTags">
-        @for (item of service.technologies; track $index) {
-            <div class="tags">{{item}}</div>
-        }
-    </div>
+            <div class="projectInputArea">
+                <p>Preis</p>
+                <span>{{service.price}}€</span>
+            </div>
 
-    <div class="detailArea">
-<!--         <div class="projectCategorie">
-            <div class="tags">{{service.category}}</div>
-        </div> -->
-        <span>{{service.description}}</span>
-        <div class="hyphen"></div>
-        <div class="projectInfo">
-            <div class="infoItem">
-                <span>Zielgruppe</span>
-                <p>{{service.target}}</p>
+            <div class="projectTags">
+                @for (item of service.technologies; track $index) {
+                <div class="tags">{{item}}</div>
+                }
             </div>
-            <div class="infoItem">
-                <span>Dauer</span>
-                <p>{{service.duration}}</p>
-            </div>
-            <div class="infoItem">
-                <span>Support</span>
-                <p>{{service.supportInfo}}</p>
-            </div>
-            <div class="infoItem">
-                <span>Features</span>
-                <p>{{service.features.join(', ')}}</p>
+
+            <div class="detailArea">
+                <!--         <div class="projectCategorie">
+                <div class="tags">{{service.category}}</div>
+            </div> -->
+                <span>{{service.description}}</span>
+                <div class="hyphen"></div>
+                <div class="projectInfo">
+                    <div class="infoItem">
+                        <p>Zielgruppe</p>
+                        <span>{{service.target}}</span>
+                    </div>
+                    <div class="infoItem">
+                        <p>Dauer</p>
+                        <span>{{service.duration}}</span>
+                    </div>
+                    <div class="infoItem">
+                        <p>Support</p>
+                        <span>{{service.supportInfo}}</span>
+                    </div>
+                    <div class="infoItem">
+                        <p>Features</p>
+                        <span>{{service.features.join(', ')}}</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div></body> <app-footer></app-footer> }
+    </body> 
+<app-footer></app-footer> }

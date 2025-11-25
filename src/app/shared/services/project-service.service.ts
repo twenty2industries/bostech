@@ -64,10 +64,10 @@ export class ProjectServiceService {
 
   services: Service[] = [
     {
-      id: 'portfolio-pro',
-      title: 'Portfolio Pro',
+      id: 'Business One-Pager',
+      title: 'Business One-Pager',
       price: 300,
-      description: 'Modernes One-Page-Portfolio mit interaktiver Galerie und Kontaktintegration – perfekt für kreative Profils.',
+      description: 'Ein moderner One-Pager, der dein Unternehmen klar präsentiert – kompakt, professionell und perfekt für den ersten starken Eindruck.',
       iconUrl: 'assets/img/sections/icons/portfolioDefault.png',
       category: 'Portfolio Website',
       duration: '7–9 Werktage',
@@ -79,10 +79,10 @@ export class ProjectServiceService {
       supportInfo: 'Zwei Wochen Support'
     },
     {
-      id: 'starter-website',
-      title: 'Starter Website',
+      id: 'Unternehmens-Website',
+      title: 'Unternehmens-Website',
       price: 450,
-      description: 'Drei individuell gestaltete Unterseiten inklusive eines interaktiven Moduls wie Kontaktformular oder Online-Terminbuchung.',
+      description: 'Eine vollständige Website mit klarer Struktur, starken Inhalten und allen Funktionen, die dein Unternehmen online braucht.',
       iconUrl: 'assets/img/sections/icons/starterDefault.png',
       category: 'Webentwicklung',
       duration: '9–12 Werktage',
@@ -94,10 +94,10 @@ export class ProjectServiceService {
       supportInfo: 'Zwei Wochen kostenloser technischer Support nach Launch'
     },
     {
-      id: 'firebase-mvp',
-      title: 'Firebase MVP',
+      id: 'Individuelle Webapp',
+      title: 'Individuelle Webapp',
       price: 750,
-      description: 'Umfassendes Minimum Viable Product mit Authentifizierungssystem, Firestore-Datenbank und API-Integration.',
+      description: 'Eine maßgeschneiderte Webanwendung, die exakt auf deine Anforderungen zugeschnitten ist – schnell, flexibel und sofort einsatzbereit.',
       iconUrl: 'assets/img/sections/icons/mvpDefault.png',
       category: 'MVP Entwicklung',
       duration: '18–21 Werktage',

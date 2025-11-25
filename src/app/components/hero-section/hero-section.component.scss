@@ -12,6 +12,7 @@ section {
 
 
   .headlineArea {
+    margin: 0em 1em 0em 1em;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
@@ -21,13 +22,14 @@ section {
 
     h1 {
       color: #F5F6FA;
-      font-family: 'Poppins';
+      font-family: 'Inter';
       text-align: center;
     }
 
     h3 {
-      color: #ffffffbb;
-      font-family: 'Poppins';
+      color: #F5F6FA;
+      font-family: 'Inter';
+      font-weight: lighter;
     }
   }
 
