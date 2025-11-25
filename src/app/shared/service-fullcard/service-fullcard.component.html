@@ -29,19 +29,19 @@
                 <span>{{service.description}}</span>
                 <div class="hyphen"></div>
                 <div class="projectInfo">
-                    <div class="infoItem">
+                    <div class="infoItem" [style.object-fit]="'cover'" [style.background-image]="'url(' + service.imageUrls[0] + ')'">
                         <p>Zielgruppe</p>
                         <span>{{service.target}}</span>
                     </div>
-                    <div class="infoItem">
+                    <div class="infoItem" [style.object-fit]="'cover'" [style.background-image]="'url(' + service.imageUrls[1] + ')'">
                         <p>Dauer</p>
                         <span>{{service.duration}}</span>
                     </div>
-                    <div class="infoItem">
+                    <div class="infoItem" [style.object-fit]="'cover'" [style.background-image]="'url(' + service.imageUrls[2] + ')'">
                         <p>Support</p>
                         <span>{{service.supportInfo}}</span>
                     </div>
-                    <div class="infoItem">
+                    <div class="infoItem" [style.object-fit]="'cover'" [style.background-image]="'url(' + service.imageUrls[0] + ')'">
                         <p>Features</p>
                         <span>{{service.features.join(', ')}}</span>
                     </div>
@@ -49,4 +49,5 @@
             </div>
         </div>
     </body> 
-<app-footer></app-footer> }
+ <app-footer></app-footer> 
+}

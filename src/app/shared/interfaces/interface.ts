@@ -27,4 +27,6 @@ export interface Service {
   processSteps: string[];
   technologies: string[];
   supportInfo: string;
+    imageUrls: string[];
+
 }

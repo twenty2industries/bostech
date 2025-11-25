@@ -75,8 +75,14 @@ export class ProjectServiceService {
       deliverables: ['One-Page Website', 'Projekt-Galerie', 'Kontaktimplementation'],
       processSteps: ['Design Consultation', 'Entwicklung', 'Content Integration', 'Launch'],
       target: 'Freelancer, Künstler, Designer, Fotografen',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP'],
-      supportInfo: 'Zwei Wochen Support'
+      technologies: ['Schnelle Ladezeiten', 'Animationen', 'Einfache Bedienung'],
+      supportInfo: 'Zwei Wochen Support',
+            imageUrls: [
+        '/assets/img/sections/services/mvp1.jpg',
+        '/assets/img/sections/services/mvp2.jpg',
+        '/assets/img/sections/services/mvp3.jpg',
+      ],
+
     },
     {
       id: 'Unternehmens-Website',
@@ -90,8 +96,15 @@ export class ProjectServiceService {
       deliverables: ['Drei vollständig entwickelte Webseiten', 'Ein ausgewähltes Funktionsmodul nach Wahl', 'Komplette Hosting- und Domain-Einrichtung'],
       processSteps: ['Detailliertes Beratungsgespräch zur Anforderungsanalyse', 'Maßgeschneidertes Designkonzept basierend auf Corporate Identity', 'Agile Entwicklungsphase mit regelmäßigen Feedback-Schleifen', 'Professioneller Launch mit Domain- und Hosting-Einrichtung'],
       target: 'Handwerksbetriebe, Friseursalons, Lokale Gastronomie und Einzelhändler',
-      technologies: ['Modernes HTML5', 'CSS3 mit Flexbox/Grid', 'Vanilla JavaScript'],
-      supportInfo: 'Zwei Wochen kostenloser technischer Support nach Launch'
+      technologies: ['Suchmaschinenoptimierung', 'Mobile Optimierung', 'Hohe Performance'],
+      supportInfo: 'Zwei Wochen kostenloser technischer Support nach Launch',
+            imageUrls: [
+        '/assets/img/sections/services/mvp1.jpg',
+        '/assets/img/sections/services/mvp2.jpg',
+        '/assets/img/sections/services/mvp3.jpg',
+        '/assets/img/sections/services/mvp4.jpg',
+        
+      ],
     },
     {
       id: 'Individuelle Webapp',
@@ -105,8 +118,13 @@ export class ProjectServiceService {
       deliverables: ['Funktionierendes MVP', 'Dokumentation', 'Deployment auf Firebase'],
       processSteps: ['Anforderungsanalyse und Planung', 'Systemarchitektur und Datenmodellierung', 'Entwicklung und Testing', 'Deployment und Einführung'],
       target: 'Startups, Tech-Projekte, Gründer mit klarer Produktvision',
-      technologies: ['Angular', 'Firebase Auth', 'Cloud Firestore', 'Node.js'],
-      supportInfo: 'Drei Wochen technischer Support inklusive'
+      technologies: ['Echtzeit-Daten', 'Sichere Logins', 'Einfache Verwaltung'],
+      supportInfo: 'Drei Wochen technischer Support inklusive',
+      imageUrls: [
+        '/assets/img/sections/services/mvp1.jpg',
+        '/assets/img/sections/services/mvp2.jpg',
+        '/assets/img/sections/services/mvp3.jpg',
+      ],
     },
 
   ];
