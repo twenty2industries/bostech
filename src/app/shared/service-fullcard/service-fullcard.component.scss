@@ -73,10 +73,13 @@ body {
             .projectInfo {
                 display: flex;
                 overflow-y: hidden;
-                gap: 2em;
+                gap: 3em;
+                scroll-snap-type: x mandatory;
 
                 .infoItem {
+                    scroll-snap-align: center;
                     background-size: cover;
+                    background-position: center;
                     gap: 1em;
                     display: flex;
                     flex-direction: column;
@@ -95,8 +98,8 @@ body {
                     }
 
                     span {
-                        font-weight: bold;
-                        background-color: #1968b7a5;
+                        font-weight: 500;
+                        background-color: #1968b7c3;
                         padding: 1em;
                     }
 
@@ -149,4 +152,8 @@ button {
     padding: 0.3em 0.6em;
     border-radius: 5px;
     font-size: 0.9em;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

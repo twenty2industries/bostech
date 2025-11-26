@@ -5,6 +5,8 @@
   scroll-behavior: smooth;
   color: white;
   font-family: 'Poppins';
+  cursor: default;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .d_none {
@@ -28,6 +31,9 @@ a {
   border-radius: 20px;
 }
 
+button{
+  cursor: pointer;
+}
 
 
 

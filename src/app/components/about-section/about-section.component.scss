@@ -17,6 +17,7 @@ section {
 
 
   .aboutWrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -32,6 +33,8 @@ section {
       flex: 1;
 
       .smallContainer {
+              width: 100%;
+
         display: flex;
         flex-direction: column;
         gap: 0.5em;
