@@ -2,9 +2,11 @@
   <img src="assets/img/Logo.png" class="logo" alt="">
 
   <div class="burgerMenu" (click)="toggleMenu()"></div>
-  <nav [class.d_none]="!menuOpen" [class.menuActive]="menuOpen"> <a href="">Home</a>
-    <a href="">Über uns</a>
-    <a href="">Leistungen</a>
-    <a href="">FAQ</a>
+  <nav [class.d_none]="!menuOpen" [class.menuActive]="menuOpen"> 
+    <a href="#aboutus" (click)="toggleMenu()">Über uns</a>
+    <a href="#services" (click)="toggleMenu()">Leistungen</a>
+    <a href="#faq" (click)="toggleMenu()">FAQ</a>
+    <div class="burgerMenu" (click)="toggleMenu()"></div>
+
   </nav>
 </header>

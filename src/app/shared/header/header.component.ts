@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 
-
 @Component({
   selector: 'app-header',
   imports: [BurgerMenuComponent],

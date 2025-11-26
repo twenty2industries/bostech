@@ -68,7 +68,6 @@ body {
         }
 
         .detailArea {
-            margin-top: 1em;
 
             .projectInfo {
                 display: flex;
@@ -77,6 +76,7 @@ body {
                 scroll-snap-type: x mandatory;
 
                 .infoItem {
+                    min-height: 51vh;
                     scroll-snap-align: center;
                     background-size: cover;
                     background-position: center;
@@ -141,7 +141,9 @@ body {
 
 button {
     color: black;
+    position: absolute;
 }
+
 
 .tags {
     display: flex;
