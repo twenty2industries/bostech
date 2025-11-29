@@ -2,20 +2,15 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: radial-gradient(circle at top left,
-            #1968b784 1%,
-            #1b1b1b 40%,
-            #1b1b1b 70%,
-            #1b1b1b 100%);
     min-height: 100svh;
-    backdrop-filter: blur(8px);
 
     .adminArea {
         padding: 1em;
         display: flex;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
+        justify-content: end;
+        position: absolute;
+        top: 3.5em;
+        right: 0;
     }
 
     .fullcardInput {
@@ -86,7 +81,8 @@ body {
     }
 
     .hyphen {
-        width: 100%;
+        width: 100%;        top: 3.5em;
+
         height: 2px;
         background: linear-gradient(to left, #1968b7, #1968b71e, #0b0c0f00);
         margin: 1em 0;
@@ -94,8 +90,23 @@ body {
 }
 
 button {
-    color: black;
+    background-color: #1968b7;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
+
+button:hover {
+    background-color: #145a9c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
 
 .tags {
     display: flex;

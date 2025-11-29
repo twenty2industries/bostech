@@ -6,26 +6,31 @@
 <section id="projects">
     <div class="hyphen"></div>
     @for (item of projectList; track $index) {
-    <div class="projectWrapper">
-        <div class="projectBox">
-            <div class="projectImageContainer">
-                <img class="projectPicture" src="assets/img/sections/projects/{{item.title}}.png" alt="">
+<div class="projectWrapper">
+    <div class="swipeHint">
+        <span>← Swipe →</span>
+    </div>
+
+    <div class="projectBox">
+        <div class="projectImageContainer">
+            <img class="projectPicture" src="assets/img/sections/projects/{{item.title}}.png" alt="">
+        </div>
+        <div class="projectInfo">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+            <span>{{item.description}}</span>
+            <div class="techIconsContainer">
+                @for (techstackDetail of item.techstack; track $index) {
+                <img class="techIcons" [src]="techstackDetail.icon">
+                }
             </div>
-            <div class="projectInfo">
-                <h3>{{item.title}}</h3>
-                <p>{{item.description}}</p>
-                <span>{{item.description}}</span>
-                <div class="techIconsContainer">
-                    @for (techstackDetail of item.techstack; track $index) {
-                    <img class="techIcons" [src]="techstackDetail.icon">
-                    }
-                </div>
-                <div class="ctaContainer">
-                    <button [routerLink]="['fullcard', item.title]" class="ctaButtons">Projekt ansehen</button>
-                    <a [href]="item.projectUrl" target="_blank" class="ctaButtonsDemo">Live-Demo</a>
-                </div>
+            <div class="ctaContainer">
+                <button [routerLink]="['fullcard', item.title]" class="ctaButtons">Projekt ansehen</button>
+                <a [href]="item.projectUrl" target="_blank" class="ctaButtonsDemo">Live-Demo</a>
             </div>
         </div>
     </div>
+</div>
+
     }
 </section>

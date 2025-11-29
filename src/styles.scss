@@ -10,8 +10,9 @@
 }
 
 body {
-  background-color: #1b1b1b;
-}
+    background: radial-gradient(circle at top left, rgba(25, 104, 183, 0.5176470588) 1%, #1b1b1b 20%, #1b1b1b 70%, #1b1b1b 100%);
+    min-height: 100svh;
+    backdrop-filter: blur(8px);}
 
 a {
   text-decoration: none;
