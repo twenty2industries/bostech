@@ -85,6 +85,43 @@ nav {
   }
 }
 
+.closeButton {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  &:hover::before {
+    transform: translateY(-50%) rotate(225deg);
+  }
+  
+  &:hover::after {
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+
 .menuActive {
   position: fixed;
   top: 0;
